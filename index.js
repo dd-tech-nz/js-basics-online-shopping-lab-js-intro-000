@@ -59,7 +59,7 @@ function removeFromCart(item) {
 
   }
   //console.log(cart.splice(index, 1))
-  cart = cart.splice(index -1, 1)
+  cart = cart.splice(index + 1, 1)
   return cart
 }
 
