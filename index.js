@@ -53,13 +53,15 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName == item) {
       index = i
-    } else {
-      return "That item is not in your cart."
+      } 
+    }
+    if (index) {
+      cart = cart.splice(index, 1)
     }
 
   }
   //console.log(cart.splice(index, 1))
-  cart = cart.splice(index + 1, 1)
+  
   return cart
 }
 
