@@ -49,14 +49,14 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   let removed = []
+  let index 
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName === item) {
-      removed = cart.splice(i, 1)
-      cart = removed
-
+      index = i
     } else {
       return "That item is not in your cart."
     }
+    cart = cart.splice(index, 1)
     return cart
   }
 
