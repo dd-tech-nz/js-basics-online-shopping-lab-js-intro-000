@@ -48,7 +48,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  let index
+  let index = -1
   for(let i = 0; i < cart.length; i++) {
     if (cart[i].itemName == item) {
       index = i
