@@ -53,7 +53,7 @@ function removeFromCart(item) {
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName == item) {
       index = i
-      } 
+      }
     }
     if (index) {
       cart = cart.splice(index, 1)
@@ -61,7 +61,7 @@ function removeFromCart(item) {
 
   }
   //console.log(cart.splice(index, 1))
-  
+
   return cart
 }
 
