@@ -51,7 +51,7 @@ function removeFromCart(item) {
   //let removed = []
   let index
   for(let i = 0; i < cart.length; i++) {
-    if(cart[i].itemName == item) {
+    if(cart[i][itemName] == item) {
       index = i
       }
     }
