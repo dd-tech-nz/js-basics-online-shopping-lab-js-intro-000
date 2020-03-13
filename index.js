@@ -27,11 +27,11 @@ function viewCart() {
     return "Your shopping cart is empty."
   } else {
     if(cart.length == 1){
-      string = string + `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}. `
+      string = string + `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}. `
     } else if(cart.length == 2) {
-      string = string + `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}, and ${cart[1].itemName} at ${cart[1].itemPrice}.`
+      string = string + `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
     } else {
-      string = string + `In your cart, you have ${cart[0].itemName} at ${cart[0].itemPrice}, and ${cart[1].itemName} at ${cart[1].itemPrice}, and ${cart[2].itemName} at ${cart[2].itemPrice}.`
+      string = string + `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}, and ${cart[2].itemName} at $${cart[2].itemPrice}.`
     }
     return string
   }
