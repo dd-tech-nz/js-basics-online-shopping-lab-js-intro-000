@@ -54,8 +54,7 @@ function removeFromCart(item) {
       index = i
     }
     if (index) {
-      const result = cart.filter(({itemName}) => !name.includes(item))
-      cart = result
+      cart = cart.splice(index, 1)
       return cart
     } else {
       return "That item is not in your cart."
