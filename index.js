@@ -48,7 +48,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  let removed = []
+  //let removed = []
   let index
   for(let i = 0; i < cart.length; i++) {
     if(cart[i].itemName == item) {
@@ -58,8 +58,8 @@ function removeFromCart(item) {
     }
 
   }
-  console.log(cart.splice(index, 1))
-  cart = cart.splice(index, 1)
+  //console.log(cart.splice(index, 1))
+  cart = cart.splice(index -1, 1)
   return cart
 }
 
