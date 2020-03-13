@@ -53,10 +53,11 @@ function removeFromCart(item) {
     if(cart[i.itemName] === item) {
       removed = cart.splice(i, 1)
       cart = removed
+      return cart
     } else {
       return "That item is not in your cart."
     }
-    return cart
+    
   }
 
 }
