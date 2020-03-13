@@ -56,7 +56,7 @@ function removeFromCart(item) {
   }
   if(index){
     return cart.splice(index, 1)
-    
+
   } else {
     return "That item is not in your cart."
   }
@@ -73,5 +73,5 @@ function placeOrder(cardNumber) {
     cart = []
     return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`
   }
-  
+
 }
