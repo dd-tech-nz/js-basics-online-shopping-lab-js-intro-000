@@ -54,7 +54,7 @@ function removeFromCart(item) {
       index = i
     }
     if (index) {
-      const result = cart.filter(({name}) => !name.includes(item))
+      const result = cart.filter(({itemName}) => !name.includes(item))
       cart = result
       return cart
     } else {
